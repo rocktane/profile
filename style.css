@@ -19,10 +19,18 @@
   }
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #F7F9FC;
-  color: #575F7D;
+  background-color: #223654;
+  color: #f1f1f1;
   font-size: 16px;
   font-weight: lighter;
 }
@@ -34,12 +42,11 @@ a:hover, a:focus, a:active, a:visited, a:link{
 .card {
   width: 600px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 1px;
   margin: 0 auto;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  border: 2px solid red;
 }
 
 .title {
@@ -55,8 +62,8 @@ a:hover, a:focus, a:active, a:visited, a:link{
 }
 
 .btn-purple {
-  background-color: #6B72E1;
-  border-radius: 5px;
+  background-color: #7e85de;
+  border-radius: 1px;
   padding: 20px 30px;
   margin: 5px;
   font-weight: bold;
@@ -64,7 +71,7 @@ a:hover, a:focus, a:active, a:visited, a:link{
 }
 
 .btn-purple:hover {
-  background-color: #6064a4;
+  background-color: #a3a6cb;
 }
 .btn-purple > a {
   color: white;
@@ -76,15 +83,37 @@ a:hover, a:focus, a:active, a:visited, a:link{
   padding-left: 0px;
 }
 
-.list-inline li {
+/* .list-inline li {
   display: inline;
-}
+} */
 
 i {
+  display: inline;
   font-size: 42px;
   color: lightgrey;
 }
 
 i:hover {
-  color: black;
+  color: rgb(255, 255, 255);
+}
+
+.card {
+  position: fixed;
+  margin-left: 30px;
+}
+
+.follow-me {
+  position: fixed;
+  bottom: 20px;
+  margin-left: 30px;
+  text-align: left;
+  padding-left: 100px;
+}
+
+.social {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  vertical-align: text-top;
 }
